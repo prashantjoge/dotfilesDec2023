@@ -98,8 +98,9 @@ $ chezmoi init --apply $GITHUB_USERNAME
 ```
 Hint
 Private GitHub repos requires other authentication methods:
-
+```
 chezmoi init --apply git@github.com:$GITHUB_USERNAME/dotfiles.git
+```
 ```
 $ chezmoi help
 ```
