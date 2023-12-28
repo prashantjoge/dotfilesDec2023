@@ -1,0 +1,66 @@
+
+##################
+## Xft settings
+##################
+Xft.dpi:       96
+Xft.rgba:      rgb
+Xft.hintstyle: hintslight
+
+! special colors
+! black
+! red
+! green
+! yellow
+! blue
+! magenta
+! cyan
+! white
+
+! Urxvt Specific Settings
+
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 3
+URxvt.tabbed.tab-fg: 1
+URxvt.tabbed.tab-bg: 3
+URxvt*scrollBar:        false
+URxvt*scrollBar_right:   false
+URxvt.iso14755: false
+URxvt.font: xft:MesloLGS Nerd Font:autohint=true:size=12,xft:TerminessTTFNerdFontMono:size=12,xft:Lohit Hindi:size=12
+!URxvt.font: xft:MesloLGS NF:size=13
+URxvt.borderless: 0
+URxvt.saveLines: 2000
+URxvt.transparent: true
+URxvt.shading: 25
+*antialias:  true
+*autohint:   true
+URxvt.geometry: 80x-1
+! Restore Ctrl+Shift+(c|v)
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+!URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! Common navigation  Keybinds
+
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Control-Left: \033[1;5D
+
+!! Copy, Paste + More
+
+URxvt.clipboard.autocopy: true
+URxvt.perl-ext: default,url-select
+URxvt.perl-ext-common: default,matcher,url-select,resize-font,clipboard,fullscreen,keyboard-select, tabbedex
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: firefox
+URxvt.underlineURLs: true
+URxvt.urlButton: 2 
+URxvt.url-select.autocopy:true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+!
