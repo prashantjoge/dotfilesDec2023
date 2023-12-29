@@ -54,6 +54,5 @@ export PYTHONPATH="/usr/lib/python3.11/site-packages:/home/aaron/.pyenv/versions
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(direnv hook bash)"
 
-export OPENAI_API_KEY="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"
-export OpenAI_Organization="org-Bosb7GthOv8gkz7xpuShclJw"
+source ~/openAIKeys.zsh
 
